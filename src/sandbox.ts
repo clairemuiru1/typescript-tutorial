@@ -1,21 +1,18 @@
-let age : any = 25;
+let greet : Function;
 
-age = true;
-console.log(age);
-age = 'hello';
-console.log(age);
-age = {name: 'Luigi'}
-console.log(age);
+greet = () => {
+    console.log('hello , again');
+}
 
-let mixed: any[] =[];
+const add = ( a:number, b:number , c: number|string= 10) =>{
+    console.log(a+b);
+    console.log(c); 
+}
 
-mixed.push(5);
-mixed.push("Mario");
-mixed.push(false);
-console.log(mixed);
+add(5,10 ,'20');
 
-let ninja : {name:any ,age:any};
-ninja = {name:"Mario", age:5};
-console.log(ninja);
-ninja = {name:55, age:'yushi'};
-console.log(ninja);
+const minus = (a:number, b:number):number =>{
+    return a - b;
+}
+
+let result = minus (10,7);
